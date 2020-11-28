@@ -33,6 +33,52 @@
 			grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
 		}
 
+		#pictures+section {
+			display: block;
+			column-count: 2;
+			column-gap: 0;
+			line-height: 0;
+		}
+
+		@media (max-width: 1200px) {
+			#pictures+section {
+				column-count: 4;
+			}
+		}
+
+		@media (max-width: 1000px) {
+			#pictures+section {
+				column-count: 3;
+			}
+		}
+
+		@media (max-width: 800px) {
+			#pictures+section {
+				column-count: 2;
+			}
+		}
+
+		@media (max-width: 400px) {
+			#pictures+section {
+				column-count: 1;
+			}
+		}
+
+		#pictures+section img {
+			padding: 2px;
+			border: none;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			background: rgba(0, 0, 0, 0.4);
+		}
+
+		#pictures+section article {
+			padding: 0;
+			background: 0;
+			border: none;
+		}
+
 		article {
 			padding: 1em;
 			background: #d1cebd;
@@ -84,7 +130,7 @@
 			padding-top: 1em;
 		}
 
-		ol figure {
+		figure {
 			margin: 0;
 		}
 	</style>
@@ -653,6 +699,22 @@
 				<li>You can store the chili in the fridge for up to 4 days in the fridge or up to 6 months in the freezer.</li>
 			</ol>
 		</article>
+	</section>
+
+	<h2 id="pictures">Pictures</h2>
+	<section>
+		<img src="./media/a.jpg" />
+		<img src="./media/b.jpg" />
+		<img src="./media/c.jpg" />
+		<img src="./media/d.jpg" />
+		<img src="./media/e.jpg" />
+		<img src="./media/f.jpg" />
+		<img src="./media/g.jpg" />
+		<img src="./media/h.jpg" />
+		<img src="./media/i.jpg" />
+		<img src="./media/j.jpg" />
+		<img src="./media/k.jpg" />
+		<img src="./media/l.jpg" />
 	</section>
 </body>
 
